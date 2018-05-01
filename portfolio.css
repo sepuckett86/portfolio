@@ -1,35 +1,18 @@
 body {
- // background-image: url(http://res.cloudinary.com/sepuckett86/image/upload/v1522841975/triangles_green_pink_vd9zs7.png);
- // background: #003399; /* For browsers that do not support gradients */
-//    background: linear-gradient(to bottom left, #003399, #006666); /* Standard syntax (must be last) */
-   background: #80bfff; /* For browsers that do not support gradients */
-    background: linear-gradient(to bottom left, #9292b9, #80bfff); /* Standard syntax (must be last) */
+  background: #80bfff;
+  /* For browsers that do not support gradients */
+  background: linear-gradient(to bottom left, #9292b9, #80bfff);
+  /* Standard syntax (must be last) */
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
   width: auto;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
-
-}
-
-.jumbotron {
- // background-image: url(http://res.cloudinary.com/sepuckett86/image/upload/v1513176676/IMG_8154_iwiis1.jpg);
-  background: #141439; /* For browsers that do not support gradients */
-    background: linear-gradient(to bottom right, #336699, #000080); /* Standard syntax (must be last) */
-  background-size: cover;
-  background-position: center;
-  border-radius: 0px;
-
-  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
--webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-
 }
 
 h1 {
-    text-shadow: 2px 2px 2px black;
-
+  text-shadow: 2px 2px 2px black;
 }
 
 footer {
@@ -40,21 +23,22 @@ footer {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 50px;
-  line-height: 50px; /* Vertically center the text there */
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
-background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  line-height: 50px;
+  /* Vertically center the text there */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,80bfff+100&0+0,1+100 */
+background: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(128,191,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(128,191,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(128,191,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#80bfff',GradientType=0 ); /* IE6-9 */
 }
 
 .container {
   padding: 20px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.7);
-  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
--webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
 }
 
 .container2 {
@@ -66,17 +50,20 @@ box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 h2 {
   font-family: 'Oswald', sans-serif;
   color: white;
+  text-shadow: 2px 2px 2px #666666;
+}
 
-text-shadow: 2px 2px 2px #666666;
-
-
+p.mytext {
+  text-align: center;
+  font-size: 16pt;
 }
 
 .fa-free-code-camp {
   color: #006400
 }
+
 .fa-free-code-camp:hover {
-    color: #cccccc;
+  color: #cccccc;
 }
 
 .fa-codepen {
@@ -87,25 +74,26 @@ text-shadow: 2px 2px 2px #666666;
   color: #cccccc;
 }
 
-
 .fa-github {
   color: black;
 }
+
 .fa-github:hover {
-    color: #cccccc;
+  color: #cccccc;
 }
 
 nav {
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
-background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9292b9+0,7db9e8+100&1+0,0+100 */
+background: -moz-linear-gradient(top, rgba(146,146,185,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(146,146,185,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(146,146,185,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9292b9', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
 }
+
 .card-img-top {
-    width: 100%;
-    height: 25vw;
-    object-fit: cover;
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
 }
 
 .card-text {
