@@ -107,7 +107,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9292b9', end
   width: 100%;
   object-fit: cover;
   height: 20rem;
-
 }
 
 .card-text {
@@ -131,6 +130,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9292b9', end
     text-decoration: none;
 }
 
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+}
+
 @media only screen and (max-width: 575px) {
     .container {
         border-radius: 0px;
@@ -147,9 +150,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9292b9', end
       }
 }
 
-@media only screen and (min-width: 992px) {
-  .card {
-    height:95%;
-  }
+.row {
+   display: flex;
+   flex-wrap: wrap;
+}
 
+.row > div[class*='col-'] {
+  display: flex;
 }
