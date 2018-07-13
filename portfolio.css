@@ -11,8 +11,8 @@ body {
   font-weight: bold;
 }
 
-h1 {
-  text-shadow: 2px 2px 2px black;
+main {
+  text-align: center;
 }
 
 footer {
@@ -21,6 +21,7 @@ footer {
   margin-bottom: 0;
   overflow: hidden;
   width: 100%;
+  padding-bottom: 60px;
   /* Set the fixed height of the footer here */
   height: 50px;
   line-height: 50px;
@@ -32,15 +33,28 @@ background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(128,191,255,1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#80bfff',GradientType=0 ); /* IE6-9 */
 }
 
+h1 {
+  margin: 15px;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 2px #666666;
+  margin: 10px;
+  font-size: 40px;
+  padding-top: 20px;
+}
+
 .container {
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.7);
   -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
   -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 40px;
 }
 
 .container2 {
@@ -49,12 +63,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', e
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-h2 {
-  font-family: 'Oswald', sans-serif;
-  color: white;
-  text-shadow: 2px 2px 2px #666666;
-  margin: 10px;
+.card-text {
+  font-size: 18px;
 }
+
+.badge {
+  font-size: 16px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
 
 p.mytext {
   text-align: center;
@@ -86,6 +104,15 @@ p.mytext {
 .fa-github:hover {
   color: #cccccc;
 }
+
+.fa-stack-overflow {
+  color: #FF9900;
+}
+
+.fa-stack-overflow:hover {
+  color: #cccccc;
+}
+
 
 .card {
   text-decoration: none;
@@ -130,8 +157,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9292b9', end
     text-decoration: none;
 }
 
-.col {
-    display: table-cell; /* Make elements inside the container behave like table cells */
+
+/* make all cards in row the same height */
+.row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.row > div[class*='col-'] {
+  display: flex;
 }
 
 @media only screen and (max-width: 575px) {
@@ -140,7 +174,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9292b9', end
         box-shadow: none;
         -moz-box-shadow: none;
         -webkit-box-shadow: none;
-        margin: 0px;
+        padding: 20px;
       }
 
       .card-img-top {
@@ -148,13 +182,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9292b9', end
         object-fit: cover;
         height: 15rem;
       }
-}
 
-.row {
-   display: flex;
-   flex-wrap: wrap;
-}
-
-.row > div[class*='col-'] {
-  display: flex;
 }

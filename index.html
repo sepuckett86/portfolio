@@ -1,3 +1,6 @@
+<html>
+
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,21 +11,20 @@
   <link rel="stylesheet" href="./portfolio.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  <title>Susan Puckett</title>
+  <title>Susan Puckett Portfolio</title>
+  <meta name="description" content="Looking for a ReactJS front-end web-developer? Welcome to the portfolio of Susan Puckett. Interact with websites and web-apps she has created involving HTML, CSS, JavaScript, React, Express, and more." />
 </head>
 
+<body>
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-    <a class="navbar-brand" href="#who" style="font-family: 'Oswald', sans-serif; ">Susan Puckett</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent justify-content-between">
+    <a class="navbar-brand" href="#who" style="font-family: 'Oswald', sans-serif; font-size: 24px;">Susan Puckett</a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
-
+    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul style="font-family: 'Oswald', sans-serif;" class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#find-me">&nbsp;Find Me Online </a>
-        </li>
+      <ul style="font-family: 'Oswald', sans-serif; font-size: 24px;" class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="#portfolio">&nbsp;Portfolio </a>
         </li>
@@ -35,27 +37,28 @@
         </li>
       </ul>
     </div>
+
   </nav>
 </header>
 
-<body>
-
-  <main>
-    <div style="text-align: center; padding-bottom: 70px;">
-      <div class="container">
-
-        <h3>Hello, my name is Susan Puckett.</h3>
+<main>
+      <div id='intro' class="container">
+        <div style='padding-bottom: 10px; padding-top: 5px;'>
+            <img src='https://avatars3.githubusercontent.com/u/29714675?s=460&v=4' height='180px' alt='SusanPuckettProfilePic' style='border-radius: 50%; box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);'/>
+        </div>
+        <h1>Hello, my name is Susan Puckett.</h1>
         <div class="container2">
           <p class="mytext">I am an aspiring front-end web developer focused on mastering JavaScript and ReactJS to create functional and enjoyable web apps.</p>
         </div>
         <br />
         <h3 id="find-me">Find Me Online</h3>
-
         <div class="btn-group" id="mybuttons">
           <a class="btn" href="https://github.com/sepuckett86" target="_blank"><i class="fa fa-github" style="font-size:60px;" aria-hidden="true"></i></a>
+          <a class="btn" href="https://www.freecodecamp.org/sepuckett86" target="_blank"><i class="fa fa-free-code-camp" style="font-size:60px;" aria-hidden="true"></i></a>
+          <a class="btn" href="https://codepen.io/sepuckett86/" target="_blank"><i class="fa fa-codepen" style="font-size:60px;" aria-hidden="true"></i></a>
+          <a class="btn" href="https://stackoverflow.com/users/8995371/sepuckett86" target="_blank"><i class="fa fa-stack-overflow" style="font-size:60px;" aria-hidden="true"></i></a>
         </div>
-        <a class="btn" href="https://www.freecodecamp.org/sepuckett86" target="_blank"><i class="fa fa-free-code-camp" style="font-size:60px;" aria-hidden="true"></i></a>
-        <a class="btn" href="https://codepen.io/sepuckett86/" target="_blank"><i class="fa fa-codepen" style="font-size:60px;" aria-hidden="true"></i></a>
+        <br />
         <p>Location: Utrecht, Netherlands</p>
       </div>
 
@@ -63,7 +66,7 @@
       <h2 id="portfolio">Portfolio</h2>
       <div class="container">
         <div class="row">
-          <div class="col col-12 col-lg-6">
+          <div class="col-md-12 col-lg-6 mb-4">
             <div class="card">
               <a href="http://susan_jammming.surge.sh/" class="a-card" target="_blank">
                 <div class="card-body">
@@ -86,8 +89,8 @@
             <br />
 
           </div>
-
-          <div class="col col-12 col-lg-6">
+            <br />
+          <div class="col-md-12 col-lg-6 mb-4">
             <div class="card">
               <a href="http://sepuckett86_gminder.surge.sh/" class="a-card" target="_blank">
                 <div class="card-body">
@@ -114,10 +117,9 @@
             </div>
             <br />
           </div>
-        </div>
-<br  />
-        <div class="row">
-          <div class="col col-12 col-lg-6">
+          <br />
+
+          <div class="col col-12 col-lg-6 mb-4">
             <div class="card">
               <a href="http://sepuckett86_imageme.surge.sh/" class="a-card" target="_blank">
                 <div class="card-body">
@@ -135,11 +137,13 @@
                 <span class="badge badge-secondary">Node</span>
                 <span class="badge badge-secondary">Surge</span>
               </p>
+
             </div>
             <br />
           </div>
+          <br />
 
-          <div class="col col-12 col-lg-6">
+          <div class="col col-12 col-lg-6 mb-4">
             <div class="card">
               <a href="https://sepuckett86.github.io/" target="_blank" class="a-card">
                 <div class="card-body">
@@ -160,6 +164,7 @@
             </div>
             <br />
           </div>
+          <br />
         </div>
         <!--end row-->
       </div>
@@ -174,10 +179,10 @@
         <h4>Online courses</h4>
         <div class="list-group">
 
-          <a href="https://www.codecademy.com/pro/intensive/build-web-apis-from-scratch" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start" style="text-align: left">
+          <a href="https://www.credential.net/7ndb95ke" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start" style="text-align: left">
             <div class="d-flex w-100 justify-content-between">
               <h5 class="mb-1">Codecademy Intensive</h5>
-              <small>Ongoing</small>
+              <small>June 2018 - Completed</small>
             </div>
             <p class="mb-1">Build APIs from Scratch</p>
             <small>JavaScript, ExpressJS, Mocha, Chai</small>
@@ -268,7 +273,7 @@
       <br />
 
   </main>
-  <footer class="footer">
+  <footer class="footer" style='font-size: 20px;'>
     <p>
       Website Design | <span style="font-family: 'Oswald', sans-serif; ">Susan Puckett</span></p>
   </footer>
@@ -279,3 +284,4 @@
 
 
 </body>
+</html>
