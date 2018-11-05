@@ -126,6 +126,46 @@ p.mytext {
 
 }
 
+/* The fast way */
+.card, .list-group-item {
+  position: relative;
+  display: inline-block;
+  -webkit-transform: translate(0px, 0);
+-webkit-transition: -webkit-transform 0.3s ease;
+-moz-transform: translate(0px, 0);
+-moz-transition: -moz-transform 0.3s ease;
+transform: translate(0px, 0);
+transition: -webkit-transform 0.3s ease;
+}
+
+/* Pre-render the bigger shadow, but hide it */
+.card::after, .list-group-item::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transform: translate(0px, 0);
+-webkit-transition: -webkit-transform 0.3s ease;
+-moz-transform: translate(0px, 0);
+-moz-transition: -moz-transform 0.3s ease;
+transform: translate(0px, 0);
+transition: -webkit-transform 0.3s ease;
+}
+
+.card:hover, .list-group-item:hover {
+  -webkit-transform: scale(1.01, 1.01);
+ transform: scale(1.01, 1.01);
+}
+/* Transition to showing the bigger shadow on hover */
+.card:hover::after, .list-group-item:hover::after {
+  opacity: 1;
+}
+
+
 nav {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9292b9+0,7db9e8+100&1+0,0+100 */
 background: -moz-linear-gradient(top, rgba(146,146,185,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
@@ -175,7 +215,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9292b9', end
 @media only screen and (max-width: 575px) {
     .container {
         border-radius: 0px;
-        box-shadow: none;
         -moz-box-shadow: none;
         -webkit-box-shadow: none;
         padding: 20px;
